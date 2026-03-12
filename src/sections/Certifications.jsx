@@ -5,31 +5,42 @@ import { Award, ZoomIn } from 'lucide-react'
 import SectionWrapper, { SectionTitle } from '../components/SectionWrapper'
 
 // Import certificate images here once added to src/assets/certificates/
-// import dataScienceCert from '../assets/certificates/data-science.jpg'
-
+import dataScienceCert from '../assets/certificates/data-science.jpg'
+import MLCert from '../assets/certificates/ML-cert.png'
+import ML from '../assets/certificates/AI_ML.jpg'
 const certificates = [
   {
     id: 1,
     title: 'Data Science Certification',
-    org: 'Online Learning Platform',
-    year: '2024',
+    org: 'Khwopa College of Engineering',
+    year: '2023',
     description: 'Comprehensive 70-hour course covering Python, data manipulation, machine learning, and model evaluation.',
-    // image: dataScienceCert,  // Uncomment after adding image
-    image: null, // placeholder
+    image: dataScienceCert,  // Uncomment after adding image
+    // image: null, // placeholder
     color: '#22d3ee',
     initials: 'DS',
   },
-  // Add more certificates below:
-  // {
-  //   id: 2,
-  //   title: 'Machine Learning Fundamentals',
-  //   org: 'Coursera',
-  //   year: '2024',
-  //   description: 'Core ML concepts and practical implementations.',
-  //   image: null,
-  //   color: '#818cf8',
-  //   initials: 'ML',
-  // },
+  
+  {
+    id: 2,
+    title: 'ANAIS',
+    org: 'NAAMII',
+    year: '2025',
+    description: 'AI and its applications',
+    image: MLCert,
+    color: '#818cf8',
+    initials: 'ML',
+  },
+  {
+    id: 3,
+    title: 'ML Fundamentals',
+    org: 'COllabyte',
+    year: '2024',
+    description: 'Machine learning fundamentals.',
+    image: ML,
+    color: '#818cf8',
+    initials: 'ML',
+  },
 ]
 
 function CertCard({ cert, onClick }) {

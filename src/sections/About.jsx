@@ -7,7 +7,7 @@ import SectionWrapper, { SectionTitle } from '../components/SectionWrapper'
 const highlights = [
   {
     icon: GraduationCap,
-    label: '3rd Year',
+    label: '4th Year',
     desc: 'Computer Engineering Student'
   },
   {
@@ -48,18 +48,18 @@ export default function About() {
 
           <div className="space-y-5 font-body text-slate-400 leading-relaxed text-[15px]">
             <p>
-              I'm a <span className="text-slate-200 font-medium">3rd Year Computer Engineering Student</span> with
-              a strong passion for Artificial Intelligence and its applications in solving meaningful problems.
+              I'm a <span className="text-slate-200 font-medium">fourth Year Computer Engineering Student</span> with a belief that technology can transform 
+the world. With a focus on AI and Data Science, I have completed courses in Python, Machine Learning, and 
+Data Science, applying these skills to solve real-world problems. I believe technology has the power to change 
+the world, and I am driven by a desire to be part of that change.
             </p>
             <p>
               My journey spans <span className="text-slate-200 font-medium">hackathons, innovation competitions</span>,
-              and hands-on project development — from carbon trading platforms to behavioral wellness apps.
-              I've completed a rigorous <span className="text-slate-200 font-medium">70-hour Data Science course</span>,
-              deepening my understanding of ML and data analysis workflows.
+              and hands-on project development from carbon trading platforms to behavioral wellness apps.
+              
             </p>
             <p>
-              I'm especially drawn to <span className="text-slate-200 font-medium">climate tech</span> and
-              behavioral technology — areas where engineering can drive tangible, lasting change.
+              I’m always eager to learn, build, and collaborate on ideas that push the boundaries of innovation.
             </p>
           </div>
 
@@ -76,8 +76,27 @@ export default function About() {
               </div>
               <div>
                 <p className="font-mono text-[10px] text-cyan-500 tracking-widest uppercase mb-1">Education</p>
-                <p className="font-display font-semibold text-slate-200 text-sm">Bachelor of Engineering — Computer Engineering</p>
+                <p className="font-display font-semibold text-slate-200 text-sm">Bachelor of Computer Engineering</p>
+                <p className="text-slate-500  text-xs mt-0.5">Khwopa College of Engineering</p>
                 <p className="text-slate-500 text-xs mt-0.5">Currently Enrolled · Expected 2026</p>
+              </div>
+            </div>
+          </motion.div>
+          {/* Education card */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="mt-8 glow-border card-bg rounded-lg p-5 transition-all duration-300"
+          >
+            <div className="flex items-start gap-4">
+              <div className="mt-1 w-8 h-8 rounded-md bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                <GraduationCap size={16} className="text-cyan-400" />
+              </div>
+              <div>
+                <p className="font-mono text-[10px] text-cyan-500 tracking-widest uppercase mb-1">Education</p>
+                <p className="font-display font-semibold text-slate-200 text-sm">High School </p>
+                <p className="text-slate-500 text-xs mt-0.5">St.Xavier's college - 2021</p>
               </div>
             </div>
           </motion.div>
