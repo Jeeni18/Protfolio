@@ -83,7 +83,6 @@ export default function Hero({ onContactOpen }) {
         {/* Glow core */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cyan-500/[0.04] rounded-full blur-[100px] pointer-events-none" />
 
-        {/* ── DESKTOP: side by side | MOBILE: stacked in correct order ── */}
         <motion.div
           variants={container}
           initial="hidden"
@@ -94,9 +93,8 @@ export default function Hero({ onContactOpen }) {
             gap-10 md:gap-8"
         >
 
-          {/* ══ MOBILE ONLY: top block (status + name) ══
-              On desktop this is hidden — the left column handles it */}
-          <div className="flex md:hidden w-full flex-col items-center text-center gap-0">
+          {/* ══ MOBILE ONLY: status + name (hidden on desktop) ══ */}
+          <div className="flex md:hidden w-full flex-col items-center text-center">
 
             {/* Status pill */}
             <motion.div variants={item} className="inline-flex items-center gap-2 mb-6">
@@ -106,42 +104,46 @@ export default function Hero({ onContactOpen }) {
               </span>
             </motion.div>
 
-            {/* Name */}
+            {/* Hi I am + name on one line */}
             <motion.div variants={item} className="mb-0">
               <p style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: '1.8rem',
+                fontSize: '1.4rem',
                 fontWeight: 500,
                 color: '#94a3b8',
                 letterSpacing: '0.05em',
-                marginBottom: '0.75rem',
+                marginBottom: '0.5rem',
                 display: 'block',
               }}>
                 Hi, I am
               </p>
+
+              {/* Single h1 with two spans to keep individual gradients on one line */}
               <h1
-                className="font-hero font-bold leading-[1.0] tracking-tight text-transparent bg-clip-text"
-                style={{
-                  fontSize: 'clamp(2rem, 8vw, 5.5rem)',
+                className="font-hero font-bold leading-[1.0] tracking-tight"
+                style={{ fontSize: 'clamp(1.8rem, 7vw, 5.5rem)', whiteSpace: 'nowrap' }}
+              >
+                <span style={{
                   backgroundImage: 'linear-gradient(135deg, #f0f9ff 30%, #67e8f9 70%, #22d3ee 100%)',
-                }}
-              >
-                Jeeni
-              </h1>
-              <h1
-                className="font-hero font-bold leading-[1.0] tracking-tight text-transparent bg-clip-text mt-1"
-                style={{
-                  fontSize: 'clamp(2rem, 8vw, 5.5rem)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}>
+                  Jeeni{' '}
+                </span>
+                <span style={{
                   backgroundImage: 'linear-gradient(135deg, #22d3ee 0%, #67e8f9 50%, #a5f3fc 100%)',
-                }}
-              >
-                Shrestha.
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}>
+                  Shrestha.
+                </span>
               </h1>
             </motion.div>
           </div>
 
-          {/* ══ MOBILE ONLY: photo (after name, before typing) ══
-              On desktop this is hidden — the right column handles it */}
+          {/* ══ MOBILE ONLY: photo (hidden on desktop) ══ */}
           <motion.div variants={item} className="flex md:hidden items-center justify-center mt-6">
             <div className="relative">
               <motion.div
@@ -194,9 +196,8 @@ export default function Hero({ onContactOpen }) {
             </div>
           </motion.div>
 
-          {/* ══ MOBILE ONLY: typing + one-liner + buttons (after photo) ══
-              On desktop this is hidden — the left column handles it */}
-          <div className="flex md:hidden w-full flex-col items-center text-center gap-0 mt-8">
+          {/* ══ MOBILE ONLY: typing + one-liner + buttons (hidden on desktop) ══ */}
+          <div className="flex md:hidden w-full flex-col items-center text-center mt-8">
             <motion.div variants={item} className="mb-6 h-8 flex items-center justify-center">
               <span className="font-mono text-base text-cyan-400/80">
                 <TypeAnimation
