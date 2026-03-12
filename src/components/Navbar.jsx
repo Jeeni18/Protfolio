@@ -46,8 +46,7 @@ export default function Navbar({ onContactOpen }) {
             whileHover={{ scale: 1.03 }}
             className="font-display font-bold text-xl tracking-tight"
           >
-            <span className="text-gradient">JN</span>
-            <span className="text-slate-500 ml-1 font-light text-base">/</span>
+            
           </motion.a>
 
           {/* Desktop nav */}
