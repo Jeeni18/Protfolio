@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 import { Github, Linkedin, ArrowUp } from 'lucide-react'
 
 const socials = [
-  { icon: Github, label: 'GitHub', href: 'https://github.com/jeenishrestha' },
-  { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/jeenishrestha' },
+  { icon: Github, label: 'GitHub', href: 'https://github.com/Jeeni18' },
+  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/jeeni-shrestha-a041912b5/' },
 ]
 
 export default function Footer() {

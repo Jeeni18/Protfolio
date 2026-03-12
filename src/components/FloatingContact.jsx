@@ -15,7 +15,7 @@ export default function FloatingContact({ onClick }) {
             exit={{ opacity: 0, x: 10 }}
             className="font-mono text-[11px] text-cyan-400 tracking-wider whitespace-nowrap bg-[#0f172a]/90 border border-cyan-500/20 px-3 py-1.5 rounded-full"
           >
-            Let's talk
+            Contact
           </motion.span>
         )}
       </AnimatePresence>

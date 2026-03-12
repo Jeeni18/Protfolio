@@ -68,7 +68,7 @@ export default function Navbar({ onContactOpen }) {
               whileTap={{ scale: 0.98 }}
               className="btn-primary text-xs py-2 px-5"
             >
-              Let's Talk
+              Contact
             </motion.button>
           </nav>
 
@@ -106,7 +106,7 @@ export default function Navbar({ onContactOpen }) {
                 onClick={() => { setMenuOpen(false); onContactOpen() }}
                 className="btn-primary text-sm mt-2 w-full text-center"
               >
-                Let's Talk
+                Contact
               </button>
             </div>
           </motion.div>

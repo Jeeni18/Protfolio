@@ -17,19 +17,15 @@ const highlights = [
   },
   {
     icon: Code2,
-    label: '70-Hour',
-    desc: 'Data Science Certification'
+    label: 'Builder',
+    desc: 'Builds real-world solution'
   },
   {
     icon: Trophy,
     label: 'Hackathon',
     desc: 'Experience in innovation competitions'
   },
-  {
-    icon: Leaf,
-    label: 'Climate Tech',
-    desc: 'Behavioral & sustainability solutions'
-  },
+ 
 ]
 
 export default function About() {
@@ -48,10 +44,8 @@ export default function About() {
 
           <div className="space-y-5 font-body text-slate-400 leading-relaxed text-[15px]">
             <p>
-              I'm a <span className="text-slate-200 font-medium">fourth Year Computer Engineering Student</span> with a belief that technology can transform 
-the world. With a focus on AI and Data Science, I have completed courses in Python, Machine Learning, and 
-Data Science, applying these skills to solve real-world problems. I believe technology has the power to change 
-the world, and I am driven by a desire to be part of that change.
+              I'm a <span className="text-slate-200 font-medium">fourth year Computer Engineering Student</span>. With a focus on AI and Data Science, I have completed courses in Python, Machine Learning, and 
+Data Science, applying these skills to solve real-world problems.
             </p>
             <p>
               My journey spans <span className="text-slate-200 font-medium">hackathons, innovation competitions</span>,

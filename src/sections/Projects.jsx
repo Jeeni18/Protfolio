@@ -7,17 +7,48 @@ import SectionWrapper, { SectionTitle } from '../components/SectionWrapper'
 const projects = [
   {
     number: '01',
-    name: 'Ecoflare',
-    tagline: 'Carbon Reduction Platform',
+    name: 'FER',
+    tagline: 'Facial Expression Recognition System',
     description:
-      'A carbon trading and agricultural sustainability platform designed to reduce carbon footprints through verified offset markets and smart farming insights.',
+      'This project implements a Facial Expression Recognition (FER) System using deep learning to classify human emotions from facial images.',
     stack: ['Python', 'React', 'ML', 'Data Analysis'],
-    github: 'https://github.com/jeenishrestha',
+    github: 'https://github.com/Jeeni18/Facial-Expression-Recognition-System-FER',
     accent: '#22d3ee',
     featured: true,
   },
   {
     number: '02',
+    name: 'DiagHer',
+    tagline: 'Decision Support System for Gender-Aware Healthcare',
+    description:
+      'AI-powered decision support system providing gender-aware healthcare insights, improving diagnosis, medication safety, and outcomes for female patients.',
+    stack: ['Python', 'React', 'ML', 'Data Analysis'],
+    github: 'https://github.com/Jeeni18/DiagHer-AI',
+    accent: '#22d3ee',
+    featured: true,
+  },
+  {
+    number: '03',
+    name: 'Chronova',
+    tagline: 'Immersive tourism app',
+    description:
+      'An immersive tourism app that redefines how travelers explore Nepal. It brings together Augmented Reality, real-time personalization, and cultural storytelling to offer users a new way to experience old stories.',
+    stack: ['React Native', 'Python', 'ML'],
+    github: 'https://github.com/Jeeni18/Chronova',
+    accent: '#818cf8',
+  },
+  {
+    number: '04',
+    name: 'Revolv',
+    tagline: 'AI-powered platform',
+    description:
+      'AI-powered platform designed to help small businesses scale by providing smart tools, automation, and personalized recommendations for seamless digital transformation. The platform leverages AI to analyze business data and provide actionable insights, making operations more efficient and data-driven.',
+    stack: ['React Native', 'Python', 'ML'],
+    github: 'https://github.com/Jeeni18/Revolv',
+    accent: '#34d399',
+  },
+  {
+    number: '05',
     name: 'Lumen',
     tagline: 'Anti-Doom Scrolling App',
     description:
@@ -26,26 +57,7 @@ const projects = [
     github: 'https://github.com/jeenishrestha',
     accent: '#818cf8',
   },
-  {
-    number: '03',
-    name: 'Student Data Management System',
-    tagline: 'Structured Data Platform',
-    description:
-      'An efficient system for managing, querying, and displaying structured student records with a clean UI and robust backend architecture.',
-    stack: ['Java', 'SQL', 'Data Structures'],
-    github: 'https://github.com/jeenishrestha',
-    accent: '#34d399',
-  },
-  {
-    number: '04',
-    name: 'ML Regression Projects',
-    tagline: 'Data Science Analysis',
-    description:
-      'Applied regression analysis on the Wine Quality and Titanic datasets — feature engineering, model selection, and performance evaluation using scikit-learn.',
-    stack: ['Python', 'Pandas', 'NumPy', 'Scikit-learn'],
-    github: 'https://github.com/jeenishrestha',
-    accent: '#fb923c',
-  },
+ 
 ]
 
 function ProjectCard({ project, index }) {

@@ -134,10 +134,10 @@ export default function Certifications({ onCertClick }) {
         ))}
       </div>
 
-      <p className="mt-8 font-mono text-[11px] text-slate-600 text-center">
+      {/* <p className="mt-8 font-mono text-[11px] text-slate-600 text-center">
         To add certificates: place images in{' '}
         <span className="text-cyan-600">src/assets/certificates/</span> and update the data above.
-      </p>
+      </p> */}
     </SectionWrapper>
   )
 }

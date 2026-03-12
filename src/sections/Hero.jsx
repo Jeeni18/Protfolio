@@ -53,7 +53,7 @@ export default function Hero({ onContactOpen }) {
         {/* Main headline */}
         <motion.div variants={item}>
           <h1 className="font-display font-extrabold text-5xl md:text-7xl lg:text-8xl leading-[1.05] tracking-tight mb-2">
-            <span className="text-slate-200">Hi, my name is </span>
+            <span className="text-slate-200">Hi, I am </span>
           </h1>
           <h1 className="font-display font-extrabold text-5xl md:text-7xl lg:text-8xl leading-[1.05] tracking-tight mb-8">
             <span className="text-gradient">Jeeni.</span>
@@ -68,11 +68,11 @@ export default function Hero({ onContactOpen }) {
                 'Computer Engineering Student', 2500,
                 'AI Enthusiast', 2000,
                 'Hackathon Builder', 2000,
-                'Climate Tech Explorer', 2000,
+                'Tech Explorer', 2000,
               ]}
               wrapper="span"
               speed={55}
-              deletionSpeed={70}
+              deletionSpeed={55}
               repeat={Infinity}
             />
           </span>

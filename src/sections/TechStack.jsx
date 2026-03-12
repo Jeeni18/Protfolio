@@ -1,15 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import SectionWrapper, { SectionTitle } from '../components/SectionWrapper'
+import cplus from '../assets/techStack/c++.png'
+import python from '../assets/techStack/python.png'
+import c from '../assets/techStack/c.png'
+import java from '../assets/techStack/java.png'
 
 const categories = [
   {
     name: 'Programming',
     skills: [
-      { name: 'Python', icon: '🐍' },
-      { name: 'C', icon: '⚙️' },
-      { name: 'Java', icon: '☕' },
+      { name: 'Python', img: python },
+      { name: 'C', img: c },
+      { name: 'C++', img: cplus },
+      { name: 'Java', img: java },
     ]
   },
   {
@@ -50,11 +55,13 @@ function SkillPill({ skill, delay }) {
       whileHover={{ scale: 1.06, y: -2 }}
       className="group relative flex flex-col items-center gap-2 glow-border card-bg rounded-xl p-4 cursor-default transition-all duration-300"
     >
-      <span className="text-2xl">{skill.icon}</span>
+      {skill.img
+        ? <img src={skill.img} alt={skill.name} className="w-8 h-8 object-contain mix-blend-lighten" />
+        : <span className="text-2xl">{skill.icon}</span>
+      }
       <span className="font-mono text-[11px] text-slate-400 group-hover:text-cyan-300 transition-colors text-center leading-tight">
         {skill.name}
       </span>
-      {/* Glow on hover */}
       <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
         style={{ boxShadow: 'inset 0 0 20px rgba(34,211,238,0.06)' }}
       />
