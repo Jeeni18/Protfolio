@@ -122,7 +122,7 @@ export default function Hero({ onContactOpen }) {
               <h1
                 className="font-hero font-bold leading-[1.0] tracking-tight text-transparent bg-clip-text"
                 style={{
-                  fontSize: 'clamp(3rem, 10vw, 5.5rem)',
+                  fontSize: 'clamp(2rem, 8vw, 5.5rem)',
                   backgroundImage: 'linear-gradient(135deg, #f0f9ff 30%, #67e8f9 70%, #22d3ee 100%)',
                 }}
               >
@@ -131,7 +131,7 @@ export default function Hero({ onContactOpen }) {
               <h1
                 className="font-hero font-bold leading-[1.0] tracking-tight text-transparent bg-clip-text mt-1"
                 style={{
-                  fontSize: 'clamp(3rem, 10vw, 5.5rem)',
+                  fontSize: 'clamp(2rem, 8vw, 5.5rem)',
                   backgroundImage: 'linear-gradient(135deg, #22d3ee 0%, #67e8f9 50%, #a5f3fc 100%)',
                 }}
               >
