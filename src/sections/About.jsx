@@ -39,7 +39,7 @@ export default function About() {
           <SectionTitle
             label="01 — About"
             title="About Me"
-            subtitle="A curious engineer at the intersection of technology and real-world impact."
+            
           />
 
           <div className="space-y-5 font-body text-slate-400 leading-relaxed text-[15px]">
